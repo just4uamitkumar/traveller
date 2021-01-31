@@ -58,5 +58,5 @@ const Contact = (props: any) => {
 };
 
 export default reduxForm({
-  form:'myForm'
+  form: 'myForm',
 })(Contact);

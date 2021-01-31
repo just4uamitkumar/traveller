@@ -3,8 +3,6 @@ import Banner from './Banner';
 import Accordion from './Accordion';
 import Festive from './Festive';
 
-
-
 const Home = () => {
   const [showFirst, setShowFirst] = useState(true);
   const [showSecond, setShowSecond] = useState(false);
@@ -90,7 +88,7 @@ const Home = () => {
           <div className="container">
             <div className="tabWrapper">
               <div className={showFirst ? 'tabItem active' : 'tabItem'}>
-                {FeatureList.map((e:any) => (
+                {FeatureList.map((e: any) => (
                   <Accordion key={e.id} title={e.title} content={e.content} />
                 ))}
               </div>
