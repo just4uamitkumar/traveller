@@ -28,7 +28,7 @@ const Bus = () => {
 
   const goBack = () => {
     setShowDetail(false);
-  }
+  };
 
   return (
     <main>
@@ -36,13 +36,11 @@ const Bus = () => {
         <section className="pageHeader">
           <div className="container">
             <h1>{pageTitle}</h1>
-            {
-              showDetail && <button type="button" 
-                className="btn btnSuccess" onClick={goBack}>
-                  <FaChevronLeft/> Back
-                </button>
-            }
-            
+            {showDetail && (
+              <button type="button" className="btn btnSuccess" onClick={goBack}>
+                <FaChevronLeft /> Back
+              </button>
+            )}
           </div>
         </section>
 

@@ -16,13 +16,13 @@ const ReadMore = (props: ReadProps) => {
         <div className="title">{props.name}</div>
       </div>
       <div className="contentWrap">
-          <p>
-        {props.descrip.length > 320
-          ? props.isExpanded
-            ? props.descrip
-            : `${props.descrip.substring(0, 320)}...`
-          : props.descrip}
-          </p>
+        <p>
+          {props.descrip.length > 320
+            ? props.isExpanded
+              ? props.descrip
+              : `${props.descrip.substring(0, 320)}...`
+            : props.descrip}
+        </p>
 
         {props.descrip.length > 320 && (
           <div className="text-right">
